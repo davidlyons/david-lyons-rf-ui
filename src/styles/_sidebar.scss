@@ -1,0 +1,57 @@
+.sidebar {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  left: 0;
+  height: 100%;
+  flex-direction: column;
+  border-left: 1px solid var(--border);
+  border-right: 1px solid var(--border);
+  padding: 8px 0 4px;
+  background: var(--background-body);
+}
+
+.sidebar-top {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo {
+  width: 32px;
+  height: 32px;
+
+  // horizontally center the "rf" text in the RainFocus logo
+  position: relative;
+  left: 6px;
+}
+
+.sidebar-button {
+  padding: 12px 14px;
+  border-right: 1px solid transparent;
+  transition: border-color var(--transition-duration) ease-in-out;
+
+  &:hover {
+    border-color: var(--hover-border);
+  }
+
+  img {
+    display: block;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+}
+
+.sidebar-user {
+  background: var(--user-bg);
+  color: var(--user-color);
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}

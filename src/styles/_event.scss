@@ -1,0 +1,72 @@
+@use 'breakpoints' as *;
+
+.event-container {
+  padding: 40px 24px;
+  flex-grow: 1;
+  max-width: 1169px;
+  margin: 0 auto;
+
+  @media (min-width: $breakpoint-md) {
+    padding: 40px 48px;
+  }
+}
+
+// header
+
+.event-header {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.event-logo {
+  border-radius: 8px;
+  width: 95px;
+  height: 95px;
+  object-fit: cover;
+}
+
+.event-info {
+  flex-grow: 1;
+}
+
+.event-title {
+  margin-bottom: 8px;
+}
+
+.event-action {
+  flex-shrink: 0;
+}
+
+// section 1
+
+.event-subheading {
+  margin-bottom: 16px;
+}
+
+.event-lead {
+  margin-bottom: 39px;
+}
+
+// accordion section
+
+.accordion {
+  border-top: 1px solid var(--border);
+  padding-top: 23px;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  gap: 24px;
+}
+
+.step + .step {
+  margin-top: 24px;
+}
+
+.step-heading {
+  margin-bottom: 8px;
+}

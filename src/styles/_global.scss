@@ -1,0 +1,101 @@
+:root {
+  font-family: 'Inter Variable', sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  // colors / theme
+
+  --background-body: #fff;
+  --text-body: #393551;
+  --text-header: #222;
+  --text-neutral: #444444;
+  --brand-primary: #5c00dc;
+
+  --border: #cbc6de;
+  --hover-border: color-mix(in srgb, var(--border), black 40%);
+  --user-bg: #444444;
+  --user-color: #fff;
+
+  --btn-primary-bg: var(--brand-primary);
+  --btn-primary-color: #fff;
+  --btn-primary-hover-bg: color-mix(in srgb, var(--btn-primary-bg), black 25%);
+
+  --transition-duration: 150ms;
+}
+
+// reset
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+  color: var(--text-body);
+  padding-left: 63px; // sidebar width
+}
+
+#root {
+  display: flex;
+  min-height: 100vh;
+}
+
+// prettier-ignore
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 400;
+  color: var(--text-header);
+}
+
+// typography
+
+h1 {
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 39px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+}
+
+p {
+  margin: 0;
+}
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+// utility class for icons with fill="currentColor"
+.text-brand-primary {
+  color: var(--brand-primary);
+}
+
+// utility class for span within h4
+.text-muted {
+  font-weight: 400;
+  color: var(--text-neutral);
+}

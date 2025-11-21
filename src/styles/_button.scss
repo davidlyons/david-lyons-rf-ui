@@ -1,0 +1,21 @@
+.btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 4px;
+}
+
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-color);
+  transition: background-color var(--transition-duration) ease-in-out;
+
+  &:hover {
+    background: var(--btn-primary-hover-bg);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--btn-primary-bg);
+    outline-offset: 2px;
+  }
+}

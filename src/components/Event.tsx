@@ -4,6 +4,7 @@ import Computer from '@/icons/computer.svg?react'
 import AddCircleOutline from '@/icons/add-circle-outline.svg?react'
 import { Step } from '@/components/Step'
 import { Card } from '@/components/Card'
+import { Button } from '@/components/Button'
 
 export const Event = () => (
   <div className="event-container">
@@ -18,7 +19,7 @@ export const Event = () => (
       </div>
 
       <div className="event-action">
-        <button className="btn btn-primary">Edit event</button>
+        <Button level="primary">Edit event</Button>
       </div>
     </header>
 

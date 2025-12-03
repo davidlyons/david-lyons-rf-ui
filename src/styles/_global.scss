@@ -1,3 +1,5 @@
+@use 'breakpoints' as *;
+
 :root {
   font-family: 'Inter Variable', sans-serif;
   font-weight: 400;
@@ -12,7 +14,7 @@
   --text-body: #393551;
   --text-header: #222;
   --text-neutral: #444444;
-  --brand-primary: #5c00dc;
+  --brand-primary: orange;
 
   --border: #cbc6de;
   --hover-border: color-mix(in srgb, var(--border), black 40%);
@@ -36,12 +38,10 @@ body {
   margin: 0;
   background: var(--background-body);
   color: var(--text-body);
-  padding-left: 63px; // sidebar width
-}
 
-#root {
-  display: flex;
-  min-height: 100vh;
+  @media (min-width: $breakpoint-sm) {
+    padding-left: 63px; // sidebar width
+  }
 }
 
 // prettier-ignore

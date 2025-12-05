@@ -5,15 +5,13 @@
   justify-content: space-between;
   background: var(--background-body);
   border-bottom: 1px solid var(--border);
-  width: 100%;
-  left: 0;
-  top: 0;
 
   @media (min-width: $breakpoint-sm) {
     position: fixed;
     padding: 8px 0 4px;
     border-left: 1px solid var(--border);
     border-right: 1px solid var(--border);
+    left: 0;
     height: 100%;
     width: auto;
     flex-direction: column;
@@ -39,11 +37,14 @@
 
 .sidebar-button {
   padding: 12px 14px;
-  border-right: 1px solid transparent;
-  transition: border-color var(--transition-duration) ease-in-out;
 
-  &:hover {
-    border-color: var(--hover-border);
+  @media (min-width: $breakpoint-sm) {
+    border-right: 1px solid transparent;
+    transition: border-color var(--transition-duration) ease-in-out;
+
+    &:hover {
+      border-color: var(--hover-border);
+    }
   }
 
   img {
